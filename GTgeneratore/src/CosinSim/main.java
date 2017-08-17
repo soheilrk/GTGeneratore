@@ -110,13 +110,13 @@ public class main {
 	    
 		Set<Map.Entry<String, List<Integer>>>entrySet = listOfTypes.entrySet();
 		for (Entry<String, List<Integer>> typename: entrySet){
-			
+			r += r == ""? "" : "\n";
 			idsPerType = typename.getValue();
 			for (int i = 0; i<idsPerType.size(); i++) {
 				r+= idsPerType.get(i) +" ";
 
 		}
-			r += "\n";
+			//r += "\n";
 		}
 		
 	    	output.write(r);
